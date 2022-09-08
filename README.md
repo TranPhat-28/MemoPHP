@@ -1,12 +1,12 @@
-# MemoApp-UI
+# MemoPHP
  
-A simple Flashcard app design:
-
-- Landing page
+A simple Flashcard app built with PHP. Basic features including:
 - Login, signup
-- Homepage (containing user's information and flashcards list)
-- View flashcard
+- Homepage (viewing user's information and flashcards list)
+- View flashcard and answer
 - Add flashcard
-- Change password
 
-(Might add more page in the future)
+Upcoming features:
+- Change password
+- Delete flashcard
+- Admin page
