@@ -27,10 +27,10 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active mx-2">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="#">Setting</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="signup.php">Signup</a>
+                            <a class="nav-link" href="logout.php">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -41,14 +41,15 @@
             style="height: 100%">
             <div class="jumbotron p-5">
                 <!--Form-->
-                <form action="#">
+                <form action="handleSetting.php" method="post">
                     <h2 class="mb-4">Change your password</h2>
-                    <label for="username" class="form-label">Username</label><br>
-                    <input type="text" id="username" name="username" class="form-control" disabled><br>
-                    <label for="Password" class="form-label">Password</label><br>
+                    <label for="password" class="form-label">Old password</label><br>
                     <input type="password" id="password" name="password" class="form-control"><br>
-                    <label for="Password" class="form-label">Confirm password</label><br>
-                    <input type="password" id="password" name="password" class="form-control"><br>
+                    <label for="new" class="form-label">New password</label><br>
+                    <input type="password" id="new" name="new" class="form-control"><br>
+                    <label for="confirm" class="form-label">Confirm password</label><br>
+                    <input type="password" id="confirm" name="confirm" class="form-control"><br>
+
                     <input type="submit" class="btn btn-primary" value="Change password">
                     <br><br>
                 </form>

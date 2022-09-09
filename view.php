@@ -49,7 +49,7 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Settings</a>
+                            <a class="nav-link" href="setting.php">Setting</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="logout.php">Logout</a>
@@ -74,9 +74,17 @@
                 </div>
                 <!--Right col-->
                 <div class="col-lg-6 p-1" id="rightcol">
-                    <div class="container h-100 section-decor d-flex flex-column justify-content-evenly">
-                        <div class="row w-100 h-100 d-flex align-items-center justify-content-evenly">
+                    <div class="container h-100 section-decor d-flex flex-column justify-content-evenly align-items-center">
+                        <div class="row w-100 d-flex align-items-center justify-content-evenly" style="height: 80%">
                             <button class="btn btn-light col-12 text-answer" type="button" id="answer" onclick="show()">Click to show answer!</button>
+                        </div>
+                        <div class="row w-100 d-flex align-items-center justify-content-evenly" id="deleteContainer" style="height: 15%;">
+                            <form action="handleDeleteCard.php" method="post" class="row w-100 d-flex align-items-center justify-content-center">
+                                <input type="hidden" name="deleteID" value="<?php echo $_GET['cardID']?>">
+                                <button class="btn btn-light col-12 text-answer" type="submit" id="delete" style="color: white; background-color: rgb(255, 114, 114)" onclick="confirmDelete()">
+                                    Delete this flashcard
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>

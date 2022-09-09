@@ -41,7 +41,7 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Settings</a>
+                            <a class="nav-link" href="setting.php">Setting</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="logout.php">Logout</a>
