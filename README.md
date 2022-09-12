@@ -9,10 +9,6 @@ A simple Flashcard app built with PHP - MySQL - Apache2. Basic features includin
 - Delete Flashcard
 
 Usage:
-- Import the databases.sql to MySQL and you are good to go
+- Import databases.sql to MySQL before using
 
 The UI for the app is from this link: https://github.com/TranPhat-28/MemoApp-UI
-
-Future update:
-- Admin page
-- Multiple choice question
